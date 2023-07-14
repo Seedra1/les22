@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Bootstrap-CSS -->
+            <link 
+            href="bootstrap.css"
+            rel="stylesheet">
+        <title>Mijn pagina</title>
+    </head>
+    <body>
+        <header>
+            <Menu>
+                <a href="index.html">Home</a>
+                <a href="overmij.html">Over mij</a>
+                <a href="contact.html">Contact</a>
+            </Menu>
+        </header>
+        <div class="container-sm"
+            style="background-color: pink;">
+            <div>
+                <tittle><h1>Contact</h1></tittle>
+                <form method="post" action="bewaarInformatie.php">
+                    <table>
+                        <tr>
+                            <td><b>Uw naam</b>
+                                <input type="text" name="Naam" placeholder="Naam">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Uw adres</b>
+                                <input type="text" name="Adres" placeholder="Adres">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Geboortedatum</b>
+                                <input type="date" name="Datum" max="2080-12-31">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Uw e-mail</b>
+                                <input type="text" name="E-mail" placeholder="Uw e-mail" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Opmerking</b>
+                                <textarea name="Beicht" placeholder="Max 1500 Tekens" maxlength="1500"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Verzend</b>
+                                <button type="submit" name="Verzendknop"><strong>Verzend</strong></button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <footer min="200px"> ©copyright </footer>
+    </body>
+</html>
